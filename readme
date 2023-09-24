@@ -1,0 +1,9 @@
+This is a simple reproduction of an error in the listen and h3 unjs package.
+
+# Reproduce on Windows:
+pnpm install
+pnpm dev
+
+# Describe the bug:
+## Receive in the terminal this error:
+`Only URLs with a scheme in: file, data, and node are supported by the default ESM loader. On Windows, absolute paths must be valid file:// URLs. Received protocol 'd:'`
